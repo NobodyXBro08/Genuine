@@ -1,0 +1,47 @@
+/* Contenedor principal que respeta el espacio para el Sidebar */
+.usa-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Contenedor principal con un espacio para la imagen a la derecha */
+  .content-usa {
+    width: 100%; /* Esto deja el 78% para el contenido principal */
+    margin-left: 0.25%; /* 1% de margen a la izquierda para respetar el espacio del sidebar */
+    margin-right: 23%; /* 2% de margen a la derecha para dejar espacio para el sidebar */
+    display: flex;
+    flex-direction: row; /* Cambio para organizar el contenido de forma horizontal */
+    background: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  /* Espacio para el texto descriptivo */
+  .text-section-usa {
+    width: 60%; /* Ajustamos el ancho del texto */
+    font-size: 40px;
+    color: #07106ce5;
+    font-weight: bold;
+    text-align: left; /* Alineamos el texto a la izquierda */
+    line-height: 1.5;
+    padding-right: 20px; /* Espacio entre el texto y la imagen */
+  }
+  
+  /* Sección para la imagen en el lado derecho */
+  .image-section-usa {
+    width: 40%; /* La imagen ocupará el 40% del espacio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .usa-image {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombras difusas para la imagen */
+  }
+  

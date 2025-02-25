@@ -2,6 +2,7 @@ import React from 'react';
 import '../src/css/app.css';  // Estilos principales
 import SideBar from '../src/components/sideBar.jsx';  // Importamos el SideBar
 import MisionVision from '../src/components/misionVision.jsx';
+import Usa from '../src/components/usa.jsx'
 import Fondo from '../src/assets/images/Fondo.jpg';  // Importamos la imagen de fondo
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <SideBar />
       </div>
       <MisionVision />
+      <Usa />
     </div>
   );
 }

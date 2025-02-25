@@ -1,88 +1,108 @@
 /* Contenedor principal que respeta el espacio para el Sidebar */
 .misionvision-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f0f0f0;
 }
-  
-  .content-misionvision {
-    width: 100%; /* Esto deja el 78% para el contenido principal */
-    margin-left: 0.25%; /* 1% de margen a la izquierda para respetar el espacio del sidebar */
-    margin-right: 23%; /* 2% de margen a la derecha para dejar espacio para el sidebar */
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(to top, #ffffff, #e0f7fa); /* Fondo degradado de blanco a azul claro */
-    padding: 10px;
-    border-radius: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  }
-  
-  /* Espacio para texto descriptivo */
-  .text-section {
-    margin-top: 2px;
-    margin-bottom: 20px;
-    font-size: 40px;  /* Aumenté el tamaño de la letra */
-    color: #07106ce5;  /* Cambié el color del texto */
-    font-weight: bold;  /* Puse el texto en negrita */
-    text-align: center;  /* Centré el texto */
-    line-height: 1.5;  /* Añadí un poco de separación entre las líneas de texto */
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  
-  /* Cuadros de Misión y Visión */
-  .misionvision-boxes {
-    display: flex;
-    justify-content: space-between;
-    gap: 2%;
-  }
 
-  .image-section {
-    /* Centrar la imagen en la parte superior */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;  /* Tomar todo el ancho disponible */
-    margin-top: 30px;  /* Separación desde la parte superior */
-  }
-  
-  .misionvision-image {
-    width: 450px;  /* Ajusta el tamaño según necesites */
-    height: 250px;  /* Mantener la relación de aspecto de la imagen */
-    border-radius: 25px;  /* Bordes redondeados para la imagen */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);  /* Sombras difusas para el borde */
-  }
-  
-  .mision-box, .vision-box {
-    width: 48%; /* Cada cuadro ocupará el 48% del espacio */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    background: linear-gradient(to top, #ffffff, #e0f7fa); /* Fondo degradado de blanco a azul claro */
-  }
-  
-  .mision-box h3, .vision-box h3 {
-    color: #081394e5;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .mision-box p, .vision-box p {
-    color: #555;
-    font-size: 16px;
-  }
-  
-  /* Estilo para la sección de los iconos */
-  .icon-section {
-    text-align: left;  /* Los coloca a la izquierda */
-    margin-bottom: 10px;  /* Espacio entre el ícono y el título */
-  }
-  
-  .icon {
-    width: 40px;  /* Ajusta el tamaño del icono */
-    height: 40px;
-    /* color: #081394e5;  /* Cambia el color del icono a azul */ 
-    transition: color 0.3s ease;  /* Agrega transición si se desea animación */
-  }
-  
+.content-misionvision {
+  width: 100%; /* Esto deja el 78% para el contenido principal */
+  margin-left: 1%; /* 1% de margen a la izquierda para respetar el espacio del sidebar */
+  margin-right: 26%; /* 2% de margen a la derecha para dejar espacio para el sidebar */
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to top,
+    #ffffff,
+    #e0f7fa
+  ); /* Fondo degradado de blanco a azul claro */
+  padding: 10px;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Espacio para texto descriptivo */
+.text-section {
+  margin-top: 2px;
+  font-size: 40px; /* Aumenté el tamaño de la letra */
+  color: #07106ce5; /* Cambié el color del texto */
+  font-weight: bold; /* Puse el texto en negrita */
+  text-align: center; /* Centré el texto */
+  line-height: 1.5; /* Añadí un poco de separación entre las líneas de texto */
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Cuadros de Misión y Visión */
+.misionvision-boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+}
+
+.image-section {
+  /* Centrar la imagen en la parte superior */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%; /* Tomar todo el ancho disponible */
+  margin-top: 30px; /* Separación desde la parte superior */
+}
+
+.misionvision-image {
+  width: 450px; /* Ajusta el tamaño según necesites */
+  height: 250px; /* Mantener la relación de aspecto de la imagen */
+  border-radius: 25px; /* Bordes redondeados para la imagen */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombras difusas para el borde */
+}
+
+.mision-box {
+  width: 24rem; /* Cada cuadro ocupará el 50% del espacio */
+  padding: 20px;
+  border-radius: 25px;
+  border: 2px solid #081394e5; /* Bordes de 2px con color azul */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  background: transparent; /* Fondo transparente */
+  margin-bottom: 100px;
+  margin-left: 75px; /* Agrega margen izquierdo */
+  height: 12rem;
+}
+
+.vision-box {
+  width: 24rem; /* Cada cuadro ocupará el 50% del espacio */
+  padding: 20px;
+  border-radius: 25px;
+  border: 2px solid #081394e5; /* Bordes de 2px con color azul */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  background: transparent; /* Fondo transparente */
+  margin-bottom: 100px;
+  margin-right: 75px; /* Agrega margen derecho */
+  height: 12rem;
+}
+
+.mision-box h3,
+.vision-box h3 {
+  color: #081394e5;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.mision-box p,
+.vision-box p {
+  color: #081394e5;
+  font-size: 16px;
+}
+
+/* Estilo para la sección de los iconos */
+.icon-section {
+  text-align: left; /* Los coloca a la izquierda */
+  margin-bottom: 5px; /* Espacio entre el ícono y el título */
+}
+
+.icon {
+  width: 40px; /* Ajusta el tamaño del icono */
+  height: 40px;
+  /* color: #081394e5;  /* Cambia el color del icono a azul */
+  transition: color 0.3s ease; /* Agrega transición si se desea animación */
+}
