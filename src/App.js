@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import '../src/css/app.css';  // Estilos principales
+import SideBar from '../src/components/sideBar.jsx';  // Importamos el SideBar
+import MisionVision from '../src/components/misionVision.jsx';
+import Fondo from '../src/assets/images/Fondo.jpg';  // Importamos la imagen de fondo
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="content">
+        <div className="image-container">
+          <img src={Fondo} alt="Fondo" className="background-image" />
+        </div>
+        <SideBar />
+      </div>
+      <MisionVision />
     </div>
   );
 }
