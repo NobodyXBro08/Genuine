@@ -4,10 +4,10 @@
     justify-content: center;
     padding: 20px;
     background-color: #f0f0f0;
-  }
-  
-  /* Contenedor principal con un espacio para la imagen a la derecha */
-  .content-usa {
+}
+
+/* Contenedor principal con un espacio para la imagen a la derecha */
+.content-usa {
     width: 100%; /* Esto deja el 78% para el contenido principal */
     margin-left: 0.25%; /* 1% de margen a la izquierda para respetar el espacio del sidebar */
     margin-right: 23%; /* 2% de margen a la derecha para dejar espacio para el sidebar */
@@ -17,31 +17,78 @@
     padding: 20px;
     border-radius: 25px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  }
-  
-  /* Espacio para el texto descriptivo */
-  .text-section-usa {
-    width: 60%; /* Ajustamos el ancho del texto */
+}
+
+/* Espacio para el texto descriptivo */
+.text-section-usa {
+    width: 50%; /* Ajustamos el ancho del texto */
     font-size: 40px;
-    color: #07106ce5;
-    font-weight: bold;
+    color: #07106ce5; 
     text-align: left; /* Alineamos el texto a la izquierda */
-    line-height: 1.5;
-    padding-right: 20px; /* Espacio entre el texto y la imagen */
+    line-height: 1;
+    padding-right: 10px; /* Espacio entre el texto y la imagen */
+}
+
+.bold-text {
+    font-weight: bold;
   }
   
-  /* Sección para la imagen en el lado derecho */
-  .image-section-usa {
-    width: 40%; /* La imagen ocupará el 40% del espacio */
+/* Estilo para el título */
+.text-section-usa h2 {
+    font-size: 32px;
+    color: #07106ce5;
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilo para el texto principal */
+.main-text {
+    font-size: 20px;
+    color: #07106ce5;
+    margin-bottom: 20px;
+}
+
+/* Sección para el texto pequeño y el botón */
+.button-container {
+    display: flex;
+    align-items: center; /* Alineamos el texto y el botón en la misma línea */
+    gap: 10px; /* Espacio entre el texto pequeño y el botón */
+}
+
+/* Estilo para el texto pequeño */
+.small-text {
+    font-size: 16px;
+    color: #07106ce5;
+}
+
+/* Estilo para el botón */
+.register-button {
+    padding: 12px 20px;
+    font-size: 14px;
+    background-color: #091168e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.register-button:hover {
+    background-color: #06357a; /* Efecto hover para el botón */
+}
+
+/* Sección para la imagen en el lado derecho */
+.image-section-usa {
+    width: 50%; /* La imagen ocupará el 40% del espacio */
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .usa-image {
+}
+
+.usa-image {
     width: 100%; /* Ocupa todo el ancho disponible */
-    height: auto; /* Mantiene la proporción de la imagen */
+    height: 100%; /* Mantiene la proporción de la imagen */
     border-radius: 25px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombras difusas para la imagen */
-  }
-  
+}

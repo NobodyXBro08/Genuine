@@ -7,22 +7,20 @@
 }
 
 .content-misionvision {
-  width: 100%; /* Esto deja el 78% para el contenido principal */
-  margin-left: 1%; /* 1% de margen a la izquierda para respetar el espacio del sidebar */
-  margin-right: 26%; /* 2% de margen a la derecha para dejar espacio para el sidebar */
+  width: 78%; /* Esto deja el 78% para el contenido principal */
+  margin-left: 4.25%; /* 1% de margen a la izquierda para respetar el espacio del sidebar */
+  margin-right: 27%; /* 2% de margen a la derecha para dejar espacio para el sidebar */
   display: flex;
   flex-direction: column;
   background: linear-gradient(
     to top,
     #ffffff,
     #e0f7fa
-  ); /* Fondo degradado de blanco a azul claro */
-  padding: 10px;
+  ); 
   border-radius: 25px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-/* Espacio para texto descriptivo */
 .text-section {
   margin-top: 2px;
   font-size: 40px; /* Aumenté el tamaño de la letra */
