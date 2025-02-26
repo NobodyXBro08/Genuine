@@ -9,12 +9,12 @@ const JoinUs = () => {
 
                 <div className="left-content">
                     <div className="text-section-joinus">
-                        <h2><strong>Somos del mundo</strong></h2>  {/* Título en negrita */}
-                        <div className="three-texts">
-                            <p className="text-orange">Colombia, Ecuador, Perú, México, Pánama, Costa Rica, Chile, Argentina, Estados Unidos, Emiratos Árabes, Brasil, República Dominicana, Irlanda, Canadá, España, Portugal, China, Italia.</p>
-                            <p className="text-lila">Estados Unidos, Colombia, Perú, Brasil, Chile, México, Venezuela.</p>
-                            <p className="text-purple">Colombia, Sudáfrica, Filipinas, Chile, México, Singapur</p>
-                        </div>
+                        <h2><span className="first-line">Somos</span> <span className="second-line">del mundo</span></h2>
+                    </div>
+                    <div className="three-texts">
+                        <p className="text-orange">Colombia, Ecuador, Perú, México, Pánama, Costa Rica, Chile, Argentina, Estados Unidos, Emiratos Árabes, Brasil, República Dominicana, Irlanda, Canadá, España, Portugal, China, Italia.</p>
+                        <p className="text-lila">Estados Unidos, Colombia, Perú, Brasil, Chile, México, Venezuela.</p>
+                        <p className="text-purple">Colombia, Sudáfrica, Filipinas, Chile, México, Singapur</p>
                     </div>
                 </div>
 

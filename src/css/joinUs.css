@@ -1,137 +1,142 @@
-/* Contenedor principal que respeta el espacio para el Sidebar */
 .joinus-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f0f0f0;
 }
 
-/* Contenedor principal con un espacio para el contenido a la derecha */
 .content-joinus {
-    width: 100%;
-    margin-left: 0.25%;
-    margin-right: 23%;
-    display: flex;
-    flex-direction: row;
-    background: #ffffff;
-    padding: 0;
-    border-radius: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-left: 0.25%;
+  margin-right: 23%;
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Ajuste en el contenedor de texto */
-.text-section-joinus {
-    width: 100%;
-    font-size: 13px;
-    font-weight: normal;
-    color: #07106ce5;
-    text-align: left;
-}
-
-/* Contenido izquierdo (40%) */
 .left-content {
-    width: 40%; /* Ajustamos el ancho al 40% */
-    padding: 25px;
+  width: 30%;
+  padding: 25px;
 }
 
-/* Contenido derecho (60%) */
-.right-content {
-    width: 60%; /* Ajustamos el ancho al 60% */
-    display: flex;
-    flex-direction: column; /* Alineamos el contenido verticalmente */
-    height: 100%;
+.text-section-joinus {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #07106ce5;
+  margin-bottom: 10px; /* Reducir el espacio entre el título y los textos */
 }
 
-/* Contenedor de los rectángulos */
-.rectangles-container {
-    display: flex; /* Alineamos los rectángulos horizontalmente en una fila */
-    justify-content: flex-start; /* Alineamos los rectángulos a la izquierda */
-    gap: 0; /* Eliminamos el espacio entre los rectángulos */
-    margin-top: 0; /* Eliminamos el espacio superior */
-    padding: 0; /* Eliminamos el padding */
+.first-line {
+  display: block;
 }
 
-/* Estilo para los rectángulos */
-.rectangle {
-    text-align: center;
-    background-color: white;
-    margin: 0; /* Eliminar márgenes entre los rectángulos */
-    border-radius: 5px;
-    width: 33%; /* Cada rectángulo ocupa el 33% del ancho */
-    color: white;
-    border: 2px solid;
+.second-line {
+  display: block;
 }
 
-/* Colores específicos para cada rectángulo */
-.rectangle-1 {
-    background-color: white;
-    border-color: rgb(231, 93, 14);
-    color: rgb(231, 93, 14);
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.rectangle-2 {
-    background-color: white;
-    border-color: #d8a7f0;
-    color: #d8a7f0;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.rectangle-3 {
-    background-color: white;
-    border-color: purple;
-    color: purple;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-/* Sección de la imagen */
-.image-section-joinus {
-    display: flex;
-    justify-content: center; /* Alineamos la imagen al centro */
-    align-items: flex-start; /* Alineamos la imagen al fondo */
-    height: 66.6%; /* La imagen ocupa el 66.6% de la altura */
-    width: 100%;
-    margin-top: 0; /* Eliminar el espacio arriba */
-}
-
-/* Imagen */
-.joinus-image {
-    width: 100%; /* La imagen ocupa todo el ancho disponible */
-    height: auto; /* Ajusta la altura automáticamente */
-    justify-content: flex-end;
-}
-
-/* Contenedor de los tres textos */
 .three-texts {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  width: 75%;
+  margin-left: 0;
 }
 
 .text-orange,
 .text-lila,
 .text-purple {
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 15px;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  font-size: 14px;
 }
 
 .text-orange {
-    background-color: rgb(231, 93, 14);
-    color: white;
+  background-color: rgb(231, 93, 14);
+  color: white;
 }
 
 .text-lila {
-    background-color: #d8a7f0;
-    color: blue;
+  background-color: #d8a7f0;
+  color: blue;
 }
 
 .text-purple {
-    background-color: purple;
+  background-color: purple;
+  color: white;
+}
+
+.right-content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.rectangles-container {
+  display: flex; 
+  justify-content: flex-start; 
+  gap: 25px; 
+  margin-top: 0; 
+  padding: 0; 
+}
+
+/* Estilo para los rectángulos */
+.rectangle {
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+    text-align: center; /* Asegura que el texto esté centrado */
+    background-color: white;
+    margin-top: 75px;
+    border-radius: 5px;
+    width: 225px;
+    height: 50px;
     color: white;
+    border: 2px solid;
+  }
+  
+
+.rectangle-1 {
+  background-color: white;
+  border-color: rgb(231, 93, 14);
+  color: rgb(231, 93, 14);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.rectangle-2 {
+  background-color: white;
+  border-color: #d8a7f0;
+  color: #d8a7f0;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.rectangle-3 {
+  background-color: white;
+  border-color: purple;
+  color: purple;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.image-section-joinus {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-end; 
+  height: 65%; 
+  width: 100%;
+  margin-top: 0; /* Eliminar el espacio arriba */
+}
+
+.joinus-image {
+  width: 100%;
+  height: auto;
+  justify-content: flex-end;
 }
