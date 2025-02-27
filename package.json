@@ -1,6 +1,7 @@
 {
   "name": "genuine",
   "version": "0.1.0",
+  "homepage": "https://NobodyXBro08.github.io/genuine",
   "private": true,
   "dependencies": {
     "@svgr/plugin-svgo": "^8.1.0",
