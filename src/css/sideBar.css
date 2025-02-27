@@ -1,43 +1,49 @@
 .sidebar {
-    position: fixed;
-    padding: 10px; 
-    right: 17px;
-    width: 275px;
-    background-color: #f0f0f0;  
-    display: flex;
-    flex-direction: column;
+  position: fixed;
+  padding: 10px;
+  right: 17px;
+  width: 275px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.sidebar-logo {
+  width: 60px;
+  height: 40px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: #07106ce5;
+  background-color: white;
+  display: block;
+  padding: 5px;
+  border-radius: 1px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    display: none;
   }
-  
-  .sidebar-content {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    background-color: white;
-    border-radius: 25px;  
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
-    padding-top: 20px;  
-    font-weight: bold;
-  }
-  
-  .sidebar-logo {
-    width: 60px;  
-    height: 40px;
-    align-self: flex-start;  
-    margin-bottom: 20px;
-  }
-  
-  .sidebar-links {
-    display: flex;
-    flex-direction: column;
-    margin-top: 7px;  
-  }
-  
-  .sidebar-link {
-    text-decoration: none;
-    color: #07106ce5;
-    background-color: white;
-    display: block;
-    padding: 5px;
-    border-radius: 1px;
-    margin-bottom: 5px;
-  }
+}

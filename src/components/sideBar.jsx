@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/sideBar.css'; 
-import sideBarLogo from '../assets/images/SideBarLogo.jpg';  // Logo del sidebar
+import sideBarLogo from '../assets/images/SideBarLogo.jpg';  
 
 const SideBar = () => {
   return (
@@ -9,7 +9,7 @@ const SideBar = () => {
         <img src={sideBarLogo} alt="Logo" className="sidebar-logo" />
 
         <div className="sidebar-links">
-          <a href="#mision-vision" className="sidebar-link">Inicio</a>
+          <a href="#app" className="sidebar-link">Inicio</a>
           <a href="#mision-vision" className="sidebar-link">¿Quienes Somos?</a>
           <a href="#usa" className="sidebar-link">Somos Estadounidenses</a>
           <a href="#join-us" className="sidebar-link">Únete a Genuine</a>
